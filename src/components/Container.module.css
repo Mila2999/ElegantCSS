@@ -1,0 +1,9 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  gap: 30px;
+  background-color: lightgray;
+}
