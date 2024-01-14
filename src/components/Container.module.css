@@ -5,5 +5,9 @@
   justify-content: space-around;
   text-align: center;
   gap: 30px;
-  background-color: lightgray;
+}
+.item {
+  flex: 0 0 30%;
+  background-color: white;
+  box-sizing: border-box;
 }
