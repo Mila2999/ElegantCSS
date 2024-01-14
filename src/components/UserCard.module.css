@@ -1,6 +1,10 @@
 .card {
-  /* background-color: white;
+  background-color: white;
   width: 30%;
-  height: 30%; */
-  border-radius: 20%;
+  height: 30%;
+  border-radius: 5px;
+}
+.card-id {
+  background-color: lightgray;
+  border-radius: 50px;
 }
