@@ -8,43 +8,49 @@ const USERS = [
     name: 'Hagit Dror(You)',
     email: 'hagit@jfrog.com',
     title: 'Primary Admin',
-    status: { active: 'Active', expired: 'Expired', error: 'Error' },
+    status: 'Active',
   },
   {
     id: 'DG',
     name: 'Dror Gilad',
     email: 'drorgilad@jfrog.com',
     title: ' Admin',
-    status: { active: 'Active', expired: 'Expired', error: 'Error' },
+    status: 'Active',
   },
   {
     id: 'DG',
     name: 'Dror Gilad',
     email: 'drorgilad@jfrog.com',
     title: ' Admin',
-    status: { active: 'Active', expired: 'Expired', error: 'Error' },
+    status: 'Error',
   },
   {
     id: 'DG',
     name: 'Dror Gilad',
     email: 'drorgilad@jfrog.com',
     title: ' Admin',
-    status: { active: 'Active', expired: 'Expired', error: 'Error' },
+    status: 'Expired',
   },
   {
     id: 'DG',
     name: 'Dror Gilad',
     email: 'drorgilad@jfrog.com',
     title: ' Admin',
-    status: { active: 'Active', expired: 'Expired', error: 'Error' },
+    status: 'Active',
   },
 ];
 function Container() {
   return (
     <div className={classes.container}>
-      <Card className={classes.item} />
+      <Card className={classes.card} />
       {USERS.map((user) => (
-        <UserCard id={user.id} name={user.name} email={user.email} title={user.title} />
+        <UserCard
+          id={user.id}
+          name={user.name}
+          email={user.email}
+          title={user.title}
+          status={user.status}
+        />
       ))}
     </div>
   );

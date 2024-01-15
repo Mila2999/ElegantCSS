@@ -1,10 +1,56 @@
 .card {
-  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
   width: 30%;
   height: 30%;
+  background-color: white;
   border-radius: 5px;
 }
-.card-id {
-  background-color: lightgray;
-  border-radius: 50px;
+.circleContainer {
+  display: flex;
+  justify-content: center;
+  /* vertical-align: middle; */
+}
+.circle {
+  font-size: 30px;
+
+  display: flex;
+  justify-content: center;
+  /* vertical-align: middle; */
+  height: fit-content;
+
+  vertical-align: middle;
+  width: 80px;
+  height: 80px;
+  margin: 0px;
+  border-radius: 50%;
+  background-color: rgb(236, 238, 237);
+}
+.circleContent {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.status {
+  display: flex;
+  justify-content: center space-around;
+
+  color: white;
+  border-radius: 5px;
+  background: rgb(119, 222, 119);
+  border: 0;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 95px;
+  margin-right: 95px;
+}
+.email {
+  color: rgb(175, 190, 198);
 }

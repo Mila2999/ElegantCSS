@@ -20,26 +20,28 @@
 }
 
 .circle {
-  font-size: 50px;
+  /* font-size: 60px; */
   color: rgb(17, 209, 17);
   display: flex;
   justify-content: center;
   vertical-align: middle;
   height: fit-content;
 
-  padding-bottom: 7px;
+  padding-bottom: 5px;
   width: 80px;
   height: 80px;
   margin: 0px;
   border-radius: 50%;
-  background-color: lightgrey;
+  background-color: rgb(236, 238, 237);
 }
+
 .circleContent {
-  font-size: 50px;
+  font-size: 60px;
   color: rgb(17, 209, 17);
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .button {
