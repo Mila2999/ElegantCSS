@@ -8,3 +8,9 @@
   padding-left: 20px;
   font-size: larger;
 }
+
+@media (min-width: 768px) {
+  .body {
+    width: auto;
+  }
+}

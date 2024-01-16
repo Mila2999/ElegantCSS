@@ -42,26 +42,24 @@
   display: flex;
   justify-content: center space-around;
   text-justify: inherit;
-
-  color: white;
   border-radius: 5px;
-
   border: 0;
   margin-top: 10px;
   margin-bottom: 20px;
   margin-left: 95px;
   margin-right: 95px;
+  color: white;
 }
 
 .active {
-  background-color: lightgreen;
+  background-color: #b3f9b3;
   color: green;
 }
 
 /* Expired status styles */
 .expired {
   background-color: rgb(220, 198, 32);
-  color: rgb(172, 213, 21);
+  color: #acd515;
 }
 
 /* Error status styles */
