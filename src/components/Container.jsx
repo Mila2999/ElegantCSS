@@ -41,27 +41,12 @@ const USERS = [
 ];
 
 function Container() {
-  const getStatusColor = (status) => {
-    switch (status) {
-      case 'Active':
-        return 'green';
-      case 'Error':
-        return 'red';
-      case 'Expired':
-        return 'orange';
-      default:
-        return '';
-    }
-  };
   return (
     <div className={classes.container}>
       <Card className={classes.card} />
       {USERS.map((user) => (
         <UserCard
           key={user.id}
-          style={{
-            backgroundColor: getStatusColor(user.status),
-          }}
           id={user.id}
           name={user.name}
           email={user.email}

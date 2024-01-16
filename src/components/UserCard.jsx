@@ -1,4 +1,17 @@
 import classes from './UserCard.module.css';
+
+const getStatusColor = (status) => {
+  switch (status) {
+    case 'Active':
+      return 'green';
+    case 'Error':
+      return 'red';
+    case 'Expired':
+      return 'orange';
+    default:
+      return '';
+  }
+};
 const UserCard = (props) => {
   return (
     <div className={classes.card}>
@@ -14,7 +27,13 @@ const UserCard = (props) => {
       </div>
       <div>
         <div>{props.title}</div>
-        <div className={classes.status}>
+
+        <div
+          className={classes.status}
+          style={{
+            backgroundColor: getStatusColor(props.status),
+          }}
+        >
           <span className={classes.statusText}>{props.status}</span>
         </div>
       </div>
