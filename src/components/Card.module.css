@@ -27,7 +27,7 @@
   vertical-align: middle;
   height: fit-content;
 
-  padding-bottom: 5px;
+  /* padding-bottom: 5px; */
   width: 80px;
   height: 80px;
   margin: 0px;
@@ -38,10 +38,8 @@
 .circleContent {
   font-size: 60px;
   color: rgb(17, 209, 17);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
+
+  width: 100%;
 }
 
 .button {

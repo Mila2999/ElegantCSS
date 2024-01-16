@@ -41,16 +41,39 @@
 .status {
   display: flex;
   justify-content: center space-around;
+  text-justify: inherit;
 
   color: white;
   border-radius: 5px;
-  background: rgb(119, 222, 119);
+  background: rgb(148, 243, 148);
   border: 0;
   margin-top: 10px;
   margin-bottom: 20px;
   margin-left: 95px;
   margin-right: 95px;
 }
+
+.active {
+  background-color: lightgreen;
+  color: green;
+}
+
+/* Expired status styles */
+.expired {
+  background-color: rgb(220, 198, 32);
+  color: rgb(172, 213, 21);
+}
+
+/* Error status styles */
+.error {
+  background-color: #ffcccb;
+  color: #ff0000;
+}
+
+.statusText {
+  width: 100%;
+}
+
 .email {
   color: rgb(175, 190, 198);
 }

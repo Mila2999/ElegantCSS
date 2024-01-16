@@ -1,6 +1,5 @@
 import classes from './UserCard.module.css';
 const UserCard = (props) => {
-  console.log(props);
   return (
     <div className={classes.card}>
       <div className={classes.circleContainer}>
@@ -15,9 +14,13 @@ const UserCard = (props) => {
       </div>
       <div>
         <div>{props.title}</div>
-        <div className={classes.status}>{props.status}</div>
+        <div className={classes.status}>
+          <span className={classes.statusText}>{props.status}</span>
+        </div>
       </div>
     </div>
   );
 };
 export default UserCard;
+//className={`${styles['form-control']} ${!isValid && styles.invalid}`}
+//color: ${(props) => (props.invalid ? 'red' : 'black')};
